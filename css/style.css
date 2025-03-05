@@ -24,6 +24,8 @@ body {
 
     margin: 0;
     padding: 0;
+
+    position: relative;
 }
 
 a {
@@ -41,14 +43,26 @@ h1, h2, h3{
     font-weight: 700;
 }
 
+h1{
+    font-size: 6.4rem;
+    color: #E67522;
+    line-height: 67.2px;
 
+    margin: 0;
+}
 
 /*------------------------------------------------------------------------------
    Component
 ------------------------------------------------------------------------------*/
 
+
+/* header */
 header{
     background-color: #379AE3;
+    
+    position: sticky;
+    top: 0;
+    z-index: 10;
 }
 
 header .titre_header{
@@ -96,5 +110,48 @@ header .billet:hover{
     border: 2px solid white;
     color: rgb(255, 255, 255);
     padding: 10px 30px 10px 30px;
+    border-radius: 5px;
+}
+
+/* hero */
+.hero{
+    background: no-repeat center/100% url("../images/hero.jpg");
+    height: 637px;
+}
+
+.hero .hero_box{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 637px;
+}
+
+.hero .hero_cta{
+    padding: 40px;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 470px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.hero .hero_cta blockquote{
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 2rem;
+    margin: 0;
+
+    padding: 40px 0 40px;
+}
+
+.hero .hero_cta a{
+    color: white;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+
+.hero .hero_cta .btn_pdf{
+    background-color: #E67522;
+    padding: 10px 40px 10px 40px;
     border-radius: 5px;
 }
