@@ -210,7 +210,9 @@ header .billet:hover{
     
     background-color: #ffffff;
     max-width: 370px;
-    text-align: center;    
+    text-align: center; 
+    
+    overflow: visible;
 }
 
 .contenu .card_contenu{
@@ -236,12 +238,15 @@ header .billet:hover{
 
 .contenu .wrapper .acrobatique{
     position: relative;
+    overflow: visible;
 }
 
 .contenu .best_seller{
     width: 30%;
+    
     position: absolute;
-    right: 0;
+    top: -12px;
+    right: -12px;
 }
 
 
@@ -284,4 +289,44 @@ footer p{
 
     padding-top: 60px;
     margin: 0;
+}
+
+.visible{
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+}
+
+img.zoom{
+    display: flex;
+
+    width: 800px;
+    height: 600px;
+
+    cursor: pointer;
+
+    padding: 30px;
+
+    background-color: white;
+    border-radius: 10px;
+}
+
+.modale{
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100vw;
+    height: 100vh;
+
+    z-index: 200;
+
+    background-color: rgba(0, 0, 0, 0.8);
+
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.modale.visible{
+    display: flex;
 }
