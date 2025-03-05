@@ -24,8 +24,6 @@ body {
 
     margin: 0;
     padding: 0;
-
-    position: relative;
 }
 
 a {
@@ -51,6 +49,26 @@ h1{
     margin: 0;
 }
 
+h2{
+    font-size: 6.4rem;
+    color: black;
+
+    margin: 0;
+}
+
+h3{
+    font-size: 3.6rem;
+    line-height: 38.9px;
+    letter-spacing: -0.7px;
+
+    margin: 0;
+}
+
+p{
+    font-size: 1.8rem;
+    line-height: 27px;
+}
+
 /*------------------------------------------------------------------------------
    Component
 ------------------------------------------------------------------------------*/
@@ -59,7 +77,7 @@ h1{
 /* header */
 header{
     background-color: #379AE3;
-    
+
     position: sticky;
     top: 0;
     z-index: 10;
@@ -113,6 +131,8 @@ header .billet:hover{
     border-radius: 5px;
 }
 
+
+
 /* hero */
 .hero{
     background: no-repeat center/100% url("../images/hero.jpg");
@@ -149,9 +169,119 @@ header .billet:hover{
     font-weight: 700;
 }
 
-
 .hero .hero_cta .btn_pdf{
     background-color: #E67522;
     padding: 10px 40px 10px 40px;
     border-radius: 5px;
+}
+
+
+.contenu{
+    background-color: #E6EDF1; 
+
+    display: flex;
+    justify-content: center;
+}
+
+.contenu .contenu_text{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+    padding-top: 100px;
+    padding-bottom: 70px;
+}
+
+.contenu .cards_layout{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    padding-bottom: 100px;
+}
+
+.contenu img{
+    width: 100%;
+}
+
+.contenu .card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    background-color: #ffffff;
+    max-width: 370px;
+    text-align: center;    
+}
+
+.contenu .card_contenu{
+    padding: 20px;
+}
+
+.contenu a{
+    background-color: #E67522;
+    border: black solid 2px;
+
+    padding: 10px 20px 10px 20px;
+
+    color: black;
+    border-radius: 5px;
+
+    font-size: 1.8rem;
+
+}
+
+.contenu .btn_card{
+    margin-bottom: 50px;
+}
+
+.contenu .wrapper .acrobatique{
+    position: relative;
+}
+
+.contenu .best_seller{
+    width: 30%;
+    position: absolute;
+    right: 0;
+}
+
+
+footer{
+    background-color: #CCDAE3;
+    padding: 20px 0 20px;
+}
+
+footer li{
+    list-style: none;
+    background-color: #E67522;
+    border-radius: 50px;
+    border: 2px solid white;
+    
+    margin: 0 10px 0 10px;
+}
+
+footer a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90px;
+    height: 90px;
+}
+
+footer .material-symbols-outlined{
+    color: white;
+    font-size: 6rem;
+}
+
+footer .icons{
+    display: flex;
+    justify-content: center;
+}
+
+footer p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding-top: 60px;
+    margin: 0;
 }
